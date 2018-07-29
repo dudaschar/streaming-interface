@@ -1,0 +1,49 @@
+.movie-infos {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #17191a 0%, #101318 91%, #05080e 100%); }
+
+.movie-infos__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #323439; }
+
+.movie-infos__tabs {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
+.movie-infos__general {
+  margin-right: 50px; }
+  .movie-infos__general p {
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #1dd941; }
+
+.movie-infos__cast {
+  margin-right: 50px; }
+  .movie-infos__cast p {
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 0; }
+
+.movie-infos__awards p {
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 0; }
+
+.movie-infos__logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 5px; }
+  .movie-infos__logo img {
+    width: 40px; }
