@@ -3,6 +3,11 @@
   justify-content: flex-start;
   align-items: center;
   height: 70%;
+  @media (max-width: 576px) {
+    height: auto;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
 }
 
 .movie-cast__box {
@@ -15,4 +20,9 @@
   align-items: center;
   font-size: 16px;
   font-weight: 300;
+  @media (max-width: 576px) {
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+  }
 }
