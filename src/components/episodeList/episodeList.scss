@@ -1,0 +1,33 @@
+.episode-list {
+  width: 35vw;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  padding: 100px 50px 0 0;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgba(transparent,0) 0%, rgba(5,8,14,0.5) 100%);
+}
+
+.episode-list__header {
+  display: flex;
+  border-bottom: 1px solid #323439;
+}
+
+.episode-list__header--active, .episode-list__header--disable {
+  p {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+}
+
+.episode-list__header--active {
+  p {
+    border-bottom: 1px solid #1dd941;
+  }
+}
