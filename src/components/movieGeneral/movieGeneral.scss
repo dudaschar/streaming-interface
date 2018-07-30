@@ -1,0 +1,44 @@
+.movie-general {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-general__action {
+  width: 28%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-general__button {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #323439;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+.movie-general__synopsis {
+  width: 70%;
+  h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  font-weight: 300;
+  }
+  p {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
