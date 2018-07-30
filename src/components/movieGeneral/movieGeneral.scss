@@ -1,6 +1,8 @@
 .movie-general {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70%;
 }
 
 .movie-general__action {
@@ -12,18 +14,27 @@
 }
 
 .movie-general__button {
-  width: 5%;
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   div {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #323439;
     border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #323439;
+    font-size: 16px;
   }
   p {
     font-size: 10px;
+    color: #323439;
+    margin-bottom: 0;
   }
 }
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Fetch } from 'react-data-fetching'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus, faFrown, faVideo, faShare } from '@fortawesome/free-solid-svg-icons'
 import './movieGeneral.css'
 
 class MovieGeneral extends React.Component {
@@ -11,7 +13,7 @@ class MovieGeneral extends React.Component {
             <div className="movie-general__action">
               <div className="movie-general__button">
                 <div>
-
+                  <FontAwesomeIcon icon={faPlus}/>
                 </div>
                 <p>
                   Minha Lista
@@ -19,7 +21,7 @@ class MovieGeneral extends React.Component {
               </div>
               <div className="movie-general__button">
                 <div>
-
+                  <FontAwesomeIcon icon={faFrown} />
                 </div>
                 <p>
                   Avaliar
@@ -27,7 +29,7 @@ class MovieGeneral extends React.Component {
               </div>
               <div className="movie-general__button">
                 <div>
-
+                  <FontAwesomeIcon icon={faVideo} />
                 </div>
                 <p>
                   Gravar
@@ -35,7 +37,7 @@ class MovieGeneral extends React.Component {
               </div>
               <div className="movie-general__button">
                 <div>
-
+                  <FontAwesomeIcon icon={faShare} />
                 </div>
                 <p>
                   Compartilhar

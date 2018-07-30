@@ -5,6 +5,7 @@ import Header from '../../components/header/Header'
 import MovieInfos from '../../components/movieInfos/MovieInfos'
 import './moviePage.css'
 
+
 const MoviePage = () => (
     <div className="movie-page">
       <Background />
