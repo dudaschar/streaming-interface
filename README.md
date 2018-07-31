@@ -1,6 +1,7 @@
 # Streaming Interface
 
 This is an implementation of a tv show page on some streaming website.
+
 [Visit the page](https://pennydreadful.surge.sh/)
 
 ## Getting Started
@@ -37,3 +38,7 @@ $ cd build
 ```
 
 Now you have access for the build and be able deploy on your favorite service.
+
+#### Observations
+
+The project was made using the data provided by a test API, some features of the interface may don't have the same data of the original interface.
