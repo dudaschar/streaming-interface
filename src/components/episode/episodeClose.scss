@@ -1,0 +1,16 @@
+.episode-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.episode-close__title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.episode-close__number {
+    margin-right: 10px; 
+}

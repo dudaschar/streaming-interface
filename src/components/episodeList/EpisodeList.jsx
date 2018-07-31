@@ -7,7 +7,9 @@ import './episodeList.css'
 class EpisodeList extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {isSeasonOne: true}
+    this.state = {
+      isSeasonOne: true
+    }
     this.handleClickOne = this.handleClickOne.bind(this)
     this.handleClickTwo = this.handleClickTwo.bind(this)
   }
@@ -46,7 +48,9 @@ class EpisodeList extends React.Component {
             <p onClick={this.handleClickTwo}>T2</p>
           </div>
         </div>
-        {showContent}
+        <div className="episode-list__content">
+          {showContent}
+        </div>
       </div>
     )
   }

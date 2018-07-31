@@ -1,5 +1,5 @@
 .episode-list {
-  width: 35vw;
+  width: 30vw;
   position: absolute;
   height: 100vh;
   top: 0;
@@ -7,10 +7,18 @@
   padding: 100px 50px 0 0;
   box-sizing: border-box;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(5, 8, 14, 0.5) 100%); }
+  @media (max-width: 576px) {
+    .episode-list {
+      position: relative;
+      top: auto;
+      right: auto;
+      width: 100%;
+      padding: 30px 25px 120px;
+      height: auto; } }
 
 .episode-list__header {
   display: flex;
-  border-bottom: 1px solid #323439; }
+  border-bottom: 1px solid #414347; }
 
 .episode-list__header--active p, .episode-list__header--disable p {
   display: inline-block;
@@ -23,3 +31,9 @@
 
 .episode-list__header--active p {
   border-bottom: 1px solid #1dd941; }
+
+.episode-list__content {
+  overflow: auto;
+  height: 60%; }
+  .episode-list__content::-webkit-scrollbar {
+    display: none; }

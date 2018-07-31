@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Fetch } from 'react-data-fetching'
+import Episode from '../episode/Episode'
+import Spinner from '../spinner/Spinner'
 
 class SeasonOne extends React.Component {
 
@@ -8,9 +10,13 @@ class SeasonOne extends React.Component {
     for (let index = 0; index < data.length; index++) {
       if (data[index] != null && data[index].SeasonNumber === 1) {
         seasonOne.push(
-          <div className="episode">
-            <p key={data[index].ID}>{data[index].EpisodeNumber} {data[index].Title}</p>
-          </div>
+          <Episode
+            key={data[index].ID}
+            episode={data[index].EpisodeNumber}
+            title={data[index].Title}
+            image={data[index].Image}
+            synopsis={data[index].Synopsis}
+          />
         )
       }
     }
@@ -19,13 +25,12 @@ class SeasonOne extends React.Component {
 
   render() {
     return (
-      <div className="episode">
-        <Fetch
-          url="https://sample-api-78c77.firebaseio.com/episodes/SHOW123.json"
-          render={this.renderEpisode}
-        >
-        </Fetch>
-      </div>
+      <Fetch
+        url="https://sample-api-78c77.firebaseio.com/episodes/SHOW123.json"
+        loader={<Spinner />}
+        render={this.renderEpisode}
+      >
+      </Fetch>
     )
   }
 }
