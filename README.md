@@ -6,22 +6,22 @@ This is an implementation of a tv show page on some streaming website.
 
 ## Getting Started
 
-Follow these instructions to run the project
+Follow these instructions to run the project.
 
 
 ### Prerequisites
 
-You will need to have `npm` installed
+You will need to have `npm` installed.
 
 
 ### Installing
 
-In the project folder run the install script
+In the project directory, run the install script.
 ```
 $ npm install
 ```
 
-Then, run the script to start the project
+Then, run the script to start the project.
 ```
 $ npm start
 ```
