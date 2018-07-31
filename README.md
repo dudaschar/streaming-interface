@@ -1,10 +1,10 @@
-###### Streaming Interface
+# Streaming Interface
 ======
 
 This is an implementation of a tv show page on some streaming website.
 
 
-##### Getting Started
+## Getting Started
 ------
 
 Follow these instructions to run the project
@@ -23,7 +23,7 @@ In the project folder run the install script
 Then, run the script to start the project
 ```$ npm start```
 
-##### Deployment
+## Deployment
 ------
 
 To deploy the application you need to build the project, follow these steps:
