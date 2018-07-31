@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Fetch } from 'react-data-fetching'
 import SeasonOne from '../../components/season/SeasonOne'
 import SeasonTwo from '../../components/season/SeasonTwo'
 import './episodeList.css'

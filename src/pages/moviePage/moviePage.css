@@ -6,7 +6,7 @@ body {
   color: white;
   font-family: "Roboto"; }
 
-.movie-page--content {
+.movie-page__content {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,6 +14,13 @@ body {
   height: 100vh;
   background: linear-gradient(90deg, #262a2c 0%, rgba(16, 19, 24, 0.7) 56%, #05080e 100%); }
   @media (max-width: 576px) {
-    .movie-page--content {
+    .movie-page__content {
       min-height: 100vh;
       height: auto; } }
+
+@media (max-width: 576px) {
+  .movie-page__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85vh; } }

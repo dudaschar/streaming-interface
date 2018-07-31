@@ -13,6 +13,7 @@
     "react": "^16.4.1",
     "react-data-fetching": "^0.2.2",
     "react-dom": "^16.4.1",
+    "react-reveal": "^1.2.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {

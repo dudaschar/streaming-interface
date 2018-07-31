@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Fetch } from 'react-data-fetching'
 import MovieGeneral from '../movieGeneral/MovieGeneral'
 import MovieCast from '../movieCast/MovieCast'
 
@@ -55,8 +54,7 @@ class MovieInfos extends React.Component {
               <img src={TelecineLogo} alt="Telecine" />
             </div>
           </div>
-          
-        {showContent}
+          {showContent}
       </div>
     )
   }

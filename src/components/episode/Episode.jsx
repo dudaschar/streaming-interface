@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import EpisodeOpen from '../episode/EpisodeOpen'
 import EpisodeClose from '../episode/EpisodeClose'
+import Fade from 'react-reveal/Fade'
 
 class Episode extends React.Component {
   constructor() {
@@ -22,16 +23,20 @@ class Episode extends React.Component {
           image={this.props.image}
           title={this.props.title}
           synopsis={this.props.synopsis}
-        />
+      /> 
     }
 
     return (
       <div onClick={this.handleClick} className="episode">
-        <EpisodeClose key={this.props.key}
-          episode={this.props.episode}
-          title={this.props.title}
-        />
+        <Fade bottom>
+          <EpisodeClose key={this.props.key}
+            episode={this.props.episode}
+            title={this.props.title}
+          />
+        </Fade>
+        <Fade left opposite when={this.state.isOpen}>
         {showContent}
+        </Fade >
       </div>
     )
   }

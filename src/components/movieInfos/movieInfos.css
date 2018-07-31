@@ -11,8 +11,7 @@
     .movie-infos {
       height: auto;
       padding: 15px;
-      position: relative;
-      min-height: 200px; } }
+      position: relative; } }
 
 .movie-infos__header {
   display: flex;
