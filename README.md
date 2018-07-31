@@ -1,7 +1,7 @@
 # Streaming Interface
 
 This is an implementation of a tv show page on some streaming website.
-[Visit the page](http://pennydreadful.surge.sh/)
+[Visit the page](https://pennydreadful.surge.sh/)
 
 ## Getting Started
 
