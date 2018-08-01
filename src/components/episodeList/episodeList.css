@@ -34,6 +34,6 @@
 
 .episode-list__content {
   overflow: auto;
-  height: 60%; }
+  height: 80%; }
   .episode-list__content::-webkit-scrollbar {
     display: none; }
