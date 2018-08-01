@@ -11,20 +11,21 @@ import './movieGeneral.css'
 class MovieGeneral extends React.Component {
   render() {
     return (
-      <Fetch
-        url="https://sample-api-78c77.firebaseio.com/tv-shows/SHOW123.json"
-        loader={<Spinner />}
-      >
+      <div className="movie-general">
+        <Fetch
+          url="https://sample-api-78c77.firebaseio.com/tv-shows/SHOW123.json"
+          loader={<Spinner />}
+        >
         {({ data }) =>
-          <div className="movie-general">
+          <div className="movie-general__content">
             <div className="movie-general__action">
               <div className="movie-general__button">
                 <div>
-                  <FontAwesomeIcon icon={faPlus}/>
+                  <FontAwesomeIcon icon={faPlus} />
                 </div>
                 <p>
                   Minha Lista
-                </p>
+              </p>
               </div>
               <div className="movie-general__button">
                 <div>
@@ -51,15 +52,16 @@ class MovieGeneral extends React.Component {
                 </p>
               </div>
             </div>
-            <Fade bottom>
+            <Fade>
               <div className="movie-general__synopsis">
               <h4>Sinopse</h4>
               <p>{data.Synopsis}</p>
               </div>
             </Fade>
           </div>
-        }
-      </Fetch>
+          }
+        </Fetch>
+      </div>
     )
   }
 }

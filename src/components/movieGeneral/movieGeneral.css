@@ -3,13 +3,18 @@
   justify-content: space-between;
   align-items: center;
   height: 70%; }
-  @media (max-width: 800px) {
-    .movie-general {
-      height: 75%; } }
   @media (max-width: 576px) {
     .movie-general {
-      flex-direction: column;
       height: auto; } }
+
+.movie-general__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  @media (max-width: 576px) {
+    .movie-general__content {
+      flex-direction: column; } }
 
 .movie-general__action {
   width: 28%;
