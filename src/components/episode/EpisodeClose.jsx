@@ -5,9 +5,9 @@ import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 
 import './episodeClose.css'
 
-const EpisodeClose = ({ key, episode, title }) => (
+const EpisodeClose = ({ episode, title }) => (
   <div className="episode-close">
-    <p className="episode-close__title" key={key}>
+    <p className="episode-close__title">
       <span className="episode-close__number">
         {episode}
       </span>
@@ -18,8 +18,7 @@ const EpisodeClose = ({ key, episode, title }) => (
 )
 
 EpisodeClose.propTypes = {
-  key: PropTypes.string.isRequired,
-  episode: PropTypes.string.isRequired,
+  episode: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired
 }
 

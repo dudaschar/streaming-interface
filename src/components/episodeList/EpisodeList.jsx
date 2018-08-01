@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import SeasonOne from '../../components/season/SeasonOne'
-import SeasonTwo from '../../components/season/SeasonTwo'
+import Season from '../../components/season/Season'
 import './episodeList.css'
 
 class EpisodeList extends React.Component {
@@ -28,11 +27,11 @@ class EpisodeList extends React.Component {
     let classTwo
 
     if (isSeasonOne) {
-      showContent = <SeasonOne />
+      showContent = <Season number="1" />
       classOne = "episode-list__header--active"
       classTwo = "episode-list__header--disable"
     } else {
-      showContent = <SeasonTwo />
+      showContent = <Season number="2" />
       classOne = "episode-list__header--disable"
       classTwo = "episode-list__header--active"
     }

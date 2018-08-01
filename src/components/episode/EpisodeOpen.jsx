@@ -1,10 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Image from 'react-image-webp'
+import ImageDefault from './img/penny-dreadful.jpg'
 import './episodeOpen.css'
 
 const EpisodeOpen = ({ image, title, synopsis }) => (
   <div className="episode-open">
-    <img className="episode-open__image" src={image} alt={title}/>
+    <Image
+      src={ImageDefault}
+      webp={image}
+      className="episode-open__image"
+    />
     <p className="episode-open__text">{synopsis}</p>
   </div>
 )

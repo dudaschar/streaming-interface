@@ -3,12 +3,13 @@ import { Fetch } from 'react-data-fetching'
 import Episode from '../episode/Episode'
 import Spinner from '../spinner/Spinner'
 
-class SeasonTwo extends React.Component {
+class Season extends React.Component {
 
   renderEpisode = ({ data }) => {
     let seasonOne = []
+    const number = this.props.number
     for (let index = 0; index < data.length; index++) {
-      if (data[index] != null && data[index].SeasonNumber === 2) {
+      if (data[index] != null && data[index].SeasonNumber == number) {
         seasonOne.push(
           <Episode
             key={data[index].ID}
@@ -27,12 +28,12 @@ class SeasonTwo extends React.Component {
     return (
       <Fetch
         url="https://sample-api-78c77.firebaseio.com/episodes/SHOW123.json"
-        render={this.renderEpisode}
         loader={<Spinner />}
+        render={this.renderEpisode}
       >
       </Fetch>
     )
   }
 }
 
-export default SeasonTwo
+export default Season
